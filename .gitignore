@@ -35,3 +35,4 @@ coverage/
 # Optional: lockfile (if you want library-style repo)
 # package-lock.json
 
+.gitbunignore
