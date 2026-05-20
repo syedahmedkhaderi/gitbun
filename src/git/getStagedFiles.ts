@@ -24,23 +24,24 @@ export async function getStagedFiles(): Promise<StagedFilesResult> {
     .filter(Boolean);
 
   const parsed: StagedFile[] = lines.map(line => {
-    const parts = line.split(/\s+/);
-    let status = parts[0];
+    const parts = line.split("\t");
+    const statusCode = parts[0];
 
-    if (status === "R") {
+    if (statusCode.startsWith("R")) {
       return {
         path: parts[2],
         status: "M" as FileStatus,
       };
     }
 
-    if (status !== "A" && status !== "M" && status !== "D") {
-      status = "M";
-    }
+    const status: FileStatus =
+      statusCode === "A" || statusCode === "M" || statusCode === "D"
+        ? statusCode
+        : "M";
 
     return {
       path: parts[1],
-      status: status as FileStatus,
+      status,
     };
   });
 
