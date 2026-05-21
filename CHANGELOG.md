@@ -1,3 +1,30 @@
+# [1.10.0](https://github.com/nirvik34/gitbun/compare/v1.9.1...v1.10.0) (2026-05-21)
+
+
+### Bug Fixes
+
+* address PR review comments (semantic analysis safety & correctness) ([14ba674](https://github.com/nirvik34/gitbun/commit/14ba67447545b319641ebc120c466135b6e88bb1))
+
+
+### Features
+
+* **analyzer:** add semantic diff understanding for TS/JS ([b7b619e](https://github.com/nirvik34/gitbun/commit/b7b619e51bc4399d6549c25083aaa81bdd8139ea)), closes [#7](https://github.com/nirvik34/gitbun/issues/7)
+
+## [1.9.1](https://github.com/nirvik34/gitbun/compare/v1.9.0...v1.9.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* replace process.exit() with custom Error throws ([#18](https://github.com/nirvik34/gitbun/issues/18)) ([80e90c4](https://github.com/nirvik34/gitbun/commit/80e90c4875d2f9be492387e2b8f80fd40fdbe61f))
+* resolve coderabbit reviews and lint warnings ([ba714ae](https://github.com/nirvik34/gitbun/commit/ba714aef11c2e4c16d898e158c3343fd529a1a2e))
+
+# [1.9.0](https://github.com/nirvik34/gitbun/compare/v1.8.0...v1.9.0) (2026-05-19)
+
+
+### Features
+
+* **cli:** add --dry-run flag to preview commit message without committing ([9640dc5](https://github.com/nirvik34/gitbun/commit/9640dc509baccd2afc65a4167a64cc6024ff9faa))
+
 # [1.8.0](https://github.com/nirvik34/gitbun/compare/v1.7.0...v1.8.0) (2026-05-19)
 
 
